@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgirah Mubarak, Shajiha Jaan ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="intro-screen" class="intro-overlay d-flex flex-column justify-content-center align-items-center text-center p-4">
+        <div class="intro-content glass-card p-5 max-w-600 animate-fade-in">
+            <div class="mb-3 text-gold fs-1"><i class="bi bi-heart-fill"></i></div>
+            <h1 class="font-serif mb-3 text-burgundy">Aaj ek bohat khaas shakhs ki salgirah hai... ❤️</h1>
+            <p class="text-muted mb-4 fs-5">Yeh tohfa sirf aapke liye, mere saare pyaar ke saath.</p>
+            <button id="open-surprise-btn" class="btn btn-romantic btn-lg px-5 py-3 shadow-lg">Apna tohfa kholiye ❤️</button>
+        </div>
+    </section>
+
+    <div id="envelope-overlay" class="envelope-overlay d-none">
+        <div class="envelope-container animate-scale-up">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-pocket"></div>
+                <div class="wax-seal">S & H</div>
+                <div class="letter-preview">
+                    <h3 class="font-serif text-burgundy">Meri pyari Shajiha Jaan,</h3>
+                    <p>Har subah aur har raat, aapki muskurahat mera sab se qeemti tohfa hai...</p>
+                    <button id="enter-site-btn" class="btn btn-sm btn-romantic mt-2">Hamari duniya mein tashreef laayein ✨</button>
+                </div>
+            </div>
+            <p class="text-white mt-3 text-center animate-pulse">Mera dil kholne ke liye lifafay ko chhoo kar dekhiye...</p>
+        </div>
+    </div>
+
+    <main id="main-content" class="main-content d-none">
+        <section class="hero-section text-center position-relative overflow-hidden d-flex align-items-center">
+            <div class="container position-relative z-2 py-5">
+                <div class="badge-date mb-3 px-4 py-2 rounded-pill d-inline-block shadow-sm">
+                    <i class="bi bi-calendar-heart text-gold me-2"></i> 29 October ✨ Aapka khaas din
+                </div>
+                <h1 class="display-3 font-serif fw-bold text-burgundy mb-3">Salgirah Mubarak, Meri Shajiha Jaan! ❤️</h1>
+                <p class="lead text-muted mb-4 mx-auto max-w-700">
+                    Aapki maujoodgi se meri poori duniya roshan ho jaati hai. Aapki muskurahat meri sab se bari khushi hai.
+                </p>
+                <div id="countdown-timer" class="d-flex justify-content-center gap-3 my-4"></div>
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <a href="#memories" class="btn btn-romantic px-4 py-3 shadow">Apne tohfay dekhiye</a>
+                    <a href="#letter-section" class="btn btn-outline-burgundy px-4 py-3">Hammad ka khat</a>
+                </div>
+            </div>
+            <div class="floating-hearts-container"></div>
+        </section>
+
+        <section id="memories" class="py-5 bg-soft-pink">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="font-serif fw-bold text-burgundy">Hamari khoobsurat kahani ke paanch lamhe ❤️</h2>
+                    <p class="text-muted">Har tasveer mein ek yaad aur ek pyara ehsaas basa hai.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="polaroid-card glass-card p-3 shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/photo1.jpg" data-caption="Aapki pyari muskurahat aur hamari sab se haseen yaadein. ❤️">
+                            <div class="img-wrapper rounded overflow-hidden mb-3">
+                                <img src="images/photo1.jpg" alt="Hamari yaad ki tasveer 1" class="memory-photo">
+                            </div>
+                            <p class="font-serif text-center text-dark mb-0 caption-text">Aapki pyari muskurahat aur hamari sab se haseen yaadein. ❤️</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="polaroid-card glass-card p-3 shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/photo2.jpg" data-caption="Woh lamhe jab aapke saath waqt tham sa gaya tha. ✨">
+                            <div class="img-wrapper rounded overflow-hidden mb-3">
+                                <img src="images/photo2.jpg" alt="Hamari yaad ki tasveer 2" class="memory-photo">
+                            </div>
+                            <p class="font-serif text-center text-dark mb-0 caption-text">Woh lamhe jab aapke saath waqt tham sa gaya tha. ✨</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="polaroid-card glass-card p-3 shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/photo3.jpg" data-caption="Meri zindagi ka sab se khoobsurat aur qeemti hissa aap hain. ❤️">
+                            <div class="img-wrapper rounded overflow-hidden mb-3">
+                                <img src="images/photo3.jpg" alt="Hamari yaad ki tasveer 3" class="memory-photo">
+                            </div>
+                            <p class="font-serif text-center text-dark mb-0 caption-text">Meri zindagi ka sab se khoobsurat aur qeemti hissa aap hain. ❤️</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="polaroid-card glass-card p-3 shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/photo4.jpg" data-caption="Aapke saath har din ek nayi khushi jaisa lagta hai. ❤️">
+                            <div class="img-wrapper rounded overflow-hidden mb-3">
+                                <img src="images/photo4.jpg" alt="Hamari yaad ki tasveer 4" class="memory-photo">
+                            </div>
+                            <p class="font-serif text-center text-dark mb-0 caption-text">Aapke saath har din ek nayi khushi jaisa lagta hai. ❤️</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="polaroid-card glass-card p-3 shadow-sm h-100" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="images/photo5.jpg" data-caption="Main zindagi bhar aapka haath thaam kar chalna chahta hoon. ❤️">
+                            <div class="img-wrapper rounded overflow-hidden mb-3">
+                                <img src="images/photo5.jpg" alt="Hamari yaad ki tasveer 5" class="memory-photo">
+                            </div>
+                            <p class="font-serif text-center text-dark mb-0 caption-text">Main zindagi bhar aapka haath thaam kar chalna chahta hoon. ❤️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-white">
+            <div class="container py-4 text-center">
+                <h2 class="font-serif fw-bold text-burgundy mb-2">Ek chhoti si yaad, umr bhar ke ehsaas ❤️</h2>
+                <p class="text-muted mb-4">Ek chhota sa lamha, magar dil mein hamesha rehne wali yaad.</p>
+                <div class="video-container mx-auto glass-card p-3 shadow-lg max-w-800">
+                    <video id="memory-video" class="memory-video rounded" controls preload="metadata">
+                        <source src="videos/our-memory.mp4" type="video/mp4">
+                        Aapka browser video nahi chala sakta.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="letter-section" class="py-5 bg-soft-lavender">
+            <div class="container py-4">
+                <div class="max-w-800 mx-auto glass-card letter-card p-5 shadow-lg position-relative">
+                    <div class="text-center mb-4">
+                        <span class="text-gold fs-3"><i class="bi bi-envelope-heart-fill"></i></span>
+                        <h2 class="font-serif fw-bold text-burgundy mt-2">Hammad ki taraf se, meri sab se pyari jaan ke naam ❤️</h2>
+                    </div>
+                    <div class="letter-body font-serif fs-5 text-secondary lh-lg mb-4">
+                        <p>Meri pyari Shajiha Jaan,</p>
+                        <p>Is zindagi mein aapka hona aisi rehmat hai jiske laayiq main khud ko nahi samajhta, magar aapke saath guzra har lamha mere liye qeemti hai. Aapki muskurahat, aapka sukoon aur aapki narmi har cheez ko khoobsurat bana deti hai. Main in baaton ko kabhi khona nahi chahta.</p>
+                        <p>Main dua karta hoon ke Allah aapko hamesha khush, mehfooz aur pur-sukoon rakhe, aur aapke gird pyaar rahe. Har chhote lamhe, har khamosh muskurahat aur hamari saari yaadon ke liye shukriya.</p>
+                        <p>Meri dua hai ke hum hamesha ek doosre ko samajhte rahein, ek doosre ka saath chunte rahein aur pyaar, sabr aur sachchai ke saath khoobsurat yaadein banate rahein. Aap meri zindagi ke sab se pyare aur qeemti hisson mein se ek hain.</p>
+                        <p class="highlight-quote text-burgundy fw-bold my-4 p-3 border-start border-4 border-gold bg-white rounded-end">
+                            "Salgirah mubarak, meri Shajiha Jaan. Aap meri zindagi ka sab se khoobsurat baab hain. Dua hai ke main har roz aapke chehre par muskurahat laata rahoon. ❤️"
+                        </p>
+                        <p class="text-end mt-4">
+                            Hamesha aapka, apne saare pyaar ke saath,<br>
+                            <strong class="text-burgundy">Aapka Hammad ❤️</strong>
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button id="re-read-btn" class="btn btn-outline-burgundy px-4 py-2">Mera khat dobara parhiye</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="font-serif fw-bold text-burgundy">Pyaar se banaye gaye tohfay ❤️</h2>
+                    <p class="text-muted">Har dabbe mein ek chhota sa tohfa, sirf aapke liye.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="gift-box-card glass-card text-center p-4 shadow-sm" data-gift="1">
+                            <div class="gift-icon mb-3 fs-1 text-burgundy animate-bounce">❤️</div>
+                            <h4 class="font-serif text-burgundy">Thori si khushi</h4>
+                            <p class="text-muted small">Muskurahaton, apnayat aur pyaar se bhara chhota sa tohfa.</p>
+                            <button class="btn btn-sm btn-romantic open-gift-btn">Pehla tohfa kholiye</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gift-box-card glass-card text-center p-4 shadow-sm" data-gift="2">
+                            <div class="gift-icon mb-3 fs-1 text-burgundy animate-bounce">❤️</div>
+                            <h4 class="font-serif text-burgundy">Mere dil ka khat</h4>
+                            <p class="text-muted small">Aapke liye likha hua ek pyara sa paighaam.</p>
+                            <button class="btn btn-sm btn-romantic open-gift-btn">Doosra tohfa kholiye</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gift-box-card glass-card text-center p-4 shadow-sm" data-gift="3">
+                            <div class="gift-icon mb-3 fs-1 text-burgundy animate-bounce">❤️</div>
+                            <h4 class="font-serif text-burgundy">Ek aur tohfa</h4>
+                            <p class="text-muted small">Mere dil ki taraf se aakhri paighaam, sirf aapke liye.</p>
+                            <button class="btn btn-sm btn-romantic open-gift-btn">Teesra tohfa kholiye</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-soft-pink text-center">
+            <div class="container py-4 max-w-700">
+                <h2 class="font-serif fw-bold text-burgundy mb-3">Aapke liye duaein ❤️</h2>
+                <div class="glass-card p-4 shadow-sm mb-4">
+                    <p id="wish-display" class="font-serif fs-4 text-secondary mb-0">"Aapki muskurahat ko hamesha koi na koi wajah milti rahe."</p>
+                </div>
+                <button id="generate-wish-btn" class="btn btn-romantic px-4 py-2 shadow-sm">Ek aur dua paaiye ❤️</button>
+            </div>
+        </section>
+
+        <section class="py-4 bg-white text-center">
+            <div class="container">
+                <button id="secret-modal-btn" class="btn btn-outline-burgundy rounded-pill px-4 py-2 shadow-sm">Yahan chhoo kar dekhiye, meri jaan ❤️</button>
+            </div>
+        </section>
+
+        <section class="final-section text-center text-white py-5 position-relative overflow-hidden">
+            <div class="container position-relative z-2 py-5">
+                <div class="mb-3 fs-1 text-gold"><i class="bi bi-stars"></i></div>
+                <h2 class="font-serif fw-bold mb-3">Ek din, ek khoobsurat rooh, muskurane ki lakh wajahen. ❤️</h2>
+                <h3 class="font-serif text-gold mb-4">Salgirah Mubarak, Meri Shajiha Jaan ❤️</h3>
+                <p class="lead max-w-700 mx-auto text-light mb-5">
+                    Hammad ki taraf se, dil bhar ke pyaar ke saath. Aapki zindagi hamesha khushiyon, meherbani aur khoobsurat yaadon se bhari rahe. Aap mere liye bohat khaas hain, aur main hamesha aapka shukar guzaar rahoon ga. ❤️
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-card border-0 p-3">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Band karein"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="lightbox-img" src="" alt="Yaad ki bari tasveer" class="img-fluid rounded shadow mb-3 max-height-500">
+                    <p id="lightbox-caption" class="font-serif fs-5 text-burgundy mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="romanticModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-card border-0 p-4 text-center">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Band karein"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-icon" class="fs-1 text-burgundy mb-3"><i class="bi bi-heart-fill"></i></div>
+                    <h3 id="modal-title" class="font-serif text-burgundy mb-3">Khaas tohfa</h3>
+                    <p id="modal-message" class="text-secondary fs-5 mb-4"></p>
+                    <button type="button" class="btn btn-romantic px-4" data-bs-dismiss="modal">Kitna pyara, shukriya ❤️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
